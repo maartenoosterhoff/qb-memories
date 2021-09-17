@@ -1,0 +1,333 @@
+    KALENDER DOCUMENTATIE
+
+    Geschreven door Maarten Oosterhoff
+
+    Inhoud:
+  
+Introductie . . . . . . . . . . . . . . . . .        Par 1.0
+  
+Gegevens over Kalender. . . . . . . . . . . .        Par 1.1
+
+Start Opties. . . . . . . . . . . . . . . . .        Par 1.2
+ 
+Het gebruiken van kalender. . . . . . . . . .        Par 1.3
+  
+De menu-keuzes. . . . . . . . . . . . . . . .        Par 1.4
+  
+         Info/Informatie over Kalender. . . .        Par 2.0
+         Installatie van Kalender . . . . . .        Par 2.1
+         Einde. . . . . . . . . . . . . . . .        Par 2.2
+
+         Herstart Kalender. . . . . . . . . .        Par 3.0
+         Bekijk een kalender. . . . . . . . .        Par 3.1
+         Output produceren. . . . . . . . . .        Par 3.2
+         Zoeken van feest- en speciale dagen.        Par 3.3
+         Controleren vd ingevoerde gegevens .        Par 3.4
+         Bereken de datum van ‚‚n dag . . . .        Par 3.5
+  
+         Jaartal(len) invoeren. . . . . . . .        Par 4.0
+         Output aangeven. . . . . . . . . . .        Par 4.1
+         Feest- en speciale aangeven. . . . .        Par 4.2
+         Beeldscherm instellen. . . . . . . .        Par 4.3
+  
+         Het zeer uitgebreide Help-Menu . . .        Par 5.0
+
+Het configuratie programma. . . . . . . . . .        Par 5.0
+ 
+Dankbetuiging . . . . . . . . . . . . . . . .        Par 7.0
+
+
+Paragraaf 1.0: Introductie
+ 
+Kalender is een programma om volledige kalenders te printen met 
+12 feest- of speciale dagen. Kalender print (of schrijft) een 
+kalender naar 1 A-viertje. Het programma is gemaakt naar 
+aanleiding van de DOS-GG Programmeerwedstrijd in 1991/1992. 
+ 
+Kalender V1 is geprogrammeerd door Maarten Oosterhoff,
+in 1991-1992. Indien U vragen heeft over Kalender V1 schrijf
+dan naar:
+
+- Maarten Oosterhoff
+  ******************
+  *******  *********
+
+ten name van - KALENDER VRAAG -. U krijgt dan binnen 2 weken
+gegarandeert antwoord. Een diskette erbij doen is ook goed
+(met BV een bestandje VRAAG.TXT). Voeg wel een envelop met
+postzegel toe.
+
+
+Paragraaf 1.1: Gegevens over Kalender
+ 
+Kalender bestaat uit 6 bestanden nl.:
+- KALENDER.EXE (het hoofd programma)
+- KALENDER.HLP (het Helpbestand)
+- KALENDER.DOC (de documentatie - deze tekst)
+- KALENDER.CFG (het configuratie bestand)
+- KINSTALL.BAT (het installatieprogramma)
+- KCONFIG.EXE  (het configuratie programma)
+ 
+Kalender is gemaakt in QuickBasic 4.00b. Het programma is 
+gemaakt voor: 
+- een IBM XT/AT of kloon 
+- zowel monochrome als kleuren beeldscherm
+- alle kaarten, ook niet-grafische
+
+** Waarschuwing ** 
+
+Er zijn een aantal namen die U niet mag gebruiken. Dat zijn
+de bovengenoemde bestanden en de naam 'KALENDER.DAT', want
+kalender heeft een 'proef-file' nodig om kalenders te maken.
+
+Het programma geeft ook een signaal als U ‚‚n van deze namen
+heeft gekozen.
+
+ 
+Paragraaf 1.2: Start opties
+ 
+Kalender kunt met een aantal opties starten:
+ 
+- /B           --> Bekijk meteen een kalender
+- /P           --> Print/Schrijf meteen een kalender
+- /J=<jaar>    --> Jaar instellen (meerdere kalenders niet mogelijk)
+- /O=<uitgang> --> Print/Schrijf uitgang instellen
+- /K           --> Stel kleurenscherm in
+- /M           --> Stel monochrome scherm in
+- /G           --> Geen intro
+- /X           --> Eindig na /B of /P
+
+De opties spreken voor zich. De betekenis zal wel duidelijk zijn.
+
+
+Paragraaf 1.3: Het gebruiken van Kalender
+
+De bediening is zeer eenvoudig:
+
+- Als U in het hoofdmenu zit dan kunt U met de pijltjes-toetsen
+  en <Enter> kiezen, met <Esc> eindigen en met de funktie
+  toetsen een keuze starten (zie onderaan het scherm).
+
+- Als U een keuze heeft gemaakt, dan moet U de boodschappen
+  volgen die op het scherm komen te staan. Met <Esc> kunt U
+  altijd terugkeren naar het hoofdmenu. (Bij output produceren
+  moet U wel even wachten tot Kalender met het betreffende jaar
+  klaar is, hij maakt eerst dat jaar af!)
+
+- Als U in het Help-Menu zit kunt U met de pijltjes-toetsen en
+  <Enter> kiezen en met <Esc> gaat U weer terug naar het
+  hoofdmenu. Merk op dat het Help-Menu ALTIJD op te roepen is
+  met <F2>.
+
+
+Paragraaf 1.4: De hoofd menu keuzes van Kalender
+
+Kalender bestaat uit een simpel window-menuutje die eenvoudig
+te bedienen is. Er zijn in totaal 13 keuzes:
+
+
+Paragraaf 2.0: De keuze INFO van het menu BEHEER:
+
+Met INFO krijgt U een beetje informatie over Kalender, waar
+het vandaan komt e.d. Het is maar 1 bladzijde en U gaat na op
+1 toets te drukken weer terug naar het Hoofdmenu
+
+
+Paragraaf 2.1: De keuze INSTALLEER van het menu BEHEER:
+
+Met INSTALLEER kunt U Kalender ergens installeren op een andere
+plek op uw harde schijf, of op een floppy. U kunt NIET installeren
+als u kalender heeft gestart met bv:
+
+  C:\MENU \DIV\KAL\KALENDER.EXE
+                        
+  prompt  directory  startnaam
+
+dus vanuit een andere directory (in dit geval C:\MENU).
+
+U kunt Kalender ook installeren met KINSTALL.BAT. Dat
+gaat als volgt.
+
+  KINSTALL.BAT [drive] path
+
+Indien de 6 bovengenoemde bestanden niet bestaan, of
+U heeft KINSTALL niet goed gestart, dan stopt het in-
+stallatieprogramma.
+
+
+Paragraaf 2.2: De keuze EINDE van het menu BEHEER:
+
+Met EINDE kunt U het werken met Kalender be‰indigen, na
+een bevestiging.
+
+Zowel <Esc> als <F3> hebben hetzelfde effect als de keuze
+EINDE van het menu BEHEER.
+
+Na een bevestiging keert U terug naar D.O.S.
+
+
+Paragraaf 3.0: De keuze HERSTART van het menu OPTIES:
+
+Met HERSTART kunt U Kalender opnieuw starten. Het komt
+soms wel eens voor dat in een kalender een rekenfout zit.
+Dan klopt de kalender niet meer. Als dat het geval is,
+dan kunt U herstarten, waarna alles weer goed is.
+
+U kunt niet meer terug als U de keuze gestart heeft.
+(Kalender vraagt wel eerst om een bevestiging)
+
+
+Paragraaf 3.1: De keuze BEKIJKEN van het menu OPTIES:
+
+Met BEKIJKEN kunt U een kalender bekijken, dmv de
+pijltjestoetsen, PgUp, PgDn, Home en End. Met een
+andere toets keert U weer terug naar het hoofdmenu.
+
+
+Paragraaf 3.2: De keuze OUTPUT PRODUCEREN van het menu OPTIES:
+
+Met OUPUT PRODUCEREN kunt U ‚‚n of meer kalenders printen
+of schrijven. Het programma laat eerst alle ingevoerde
+gegevens zien (jaartal(len), wegschrijfbestand of rand-
+apparaat en de eventuele feestdagen), waarna U moet
+bevestigen dat U die kalenders wilt printen of schrijven.
+
+U kunt het printen of wegschrijven altijd onderbreken
+met <Esc>.
+
+
+Paragraaf 3.3: De keuze ZOEKEN van het menu OPTIES:
+
+Met ZOEKEN gaat Kalender zoeken naar de feestdagen, op
+welke dag ze vallen. De feestdagen zijn:
+- Pasen
+- Hemelvaart
+- Pinksteren
+- Goede Vrijdag
+- Koninginnedag
+- Dodenherdenking
+- Bevrijdingsdag
+- Dierendag
+- St Maarten
+- Sinterklaas
+- Kerst
+- Oud en nieuw
+
+Na een druk op een toets keert U terug naar het hoofdmenu.
+
+
+Paragraaf 3.4: De keuze CONTROLEREN van het menu OPTIES:
+
+Met CONTROLEREN kunt U de ingevoerde gegevens nog een
+nakijken. Dat zijn de volgende gegevens:
+- Het jaar/De jaren
+- Het output bestand/randapparaat
+- De feestdagen (niet noodzakelijk)
+
+Door een toets in te drukken keert U terug naar het
+hoofdmenu.
+
+
+Paragraaf 3.5: De keuze BEREKEN 1 DAG van het menu OPTIES:
+
+Met BEREKEN 1 DAG kunt U de datum van 1 dag berekenen.
+
+Als U bv. de datum van 10 Augustus 2075, dan voert U
+achtereenvolgens het jaar, de maand en de dag (hoeveelste)
+in. Daarna krijgt U de dag (Ma t/m Zo) waarop die datum
+valt.
+
+Als U een verkeerde datum geeft, bv. 29 Februari 2000, dan
+geeft het programma een signaal dat het fout is.
+
+
+Paragraaf 4.0: De keuze JAARTAL van het menu INSTELLINGEN:
+
+Met JAARTAL kunt U het jaar/de jaren van uw keuze invoeren.
+Eerst vraagt het programma of U ‚‚n of meer kalenders wilt
+printen, daarna moet U het jaartal(len) aangeven.
+
+Als U meer dan ‚‚n kalenders wilt printen, dan maakt
+Kalender ze niet in 1 keer aan, maar berekent ze pas als
+U ze wilt printen of wegschrijven. U kunt met meerdere
+kalenders niet Bekijken of Zoeken!
+
+Als U maar ‚‚n kalender wilt printen of wegschrijven, dan
+maakt het programma ze wel gelijk aan.
+
+
+Paragraaf 4.1: De keuze OUTPUT van het menu INSTELLINGEN:
+
+Met OUTPUT kunt U het outputbestand, bv. 1992.KAL, of
+outputapparaat, bv. LPT1: (= printer), aangeven. Gereser-
+veerder D.O.S namen, bv. CON, zijn niet mogelijk.
+
+U kunt maximaal 30 tekens intikken. Dit is als U een
+bestand wil, die in een andere directory staat,
+bv. C:\PCTOOLS\KAL\1992.KAL.
+
+Als uw keuze niet kan, dan geeft het programma pas een
+foutmelding als U output wilt produceren.
+
+
+Paragraaf 4.2: De keuze OPSTELLING van het menu INSTELLINGEN:
+
+Met OPSTELLING kunt U aangeven welke feest- en speciale
+dagen U wel en niet wilt printen/wegschrijven. Er zijn
+in totaal 12 dagen (zie bij ZOEKEN).
+
+Met de pijltjes naar boven en beneden kunt U kiezen, het
+pijltje naar links betekent niet, het pijltje naar rechts
+betekent wel printen/wegschrijven. Met <Esc> of <Enter>
+keert U terug naar het menu.
+
+
+Paragraaf 4.3: De keuze MONITOR van het menu INSTELLINGEN:
+
+Met MONITOR kunt U het beeldscherm instellen op monochrome
+scherm of kleurenscherm. Het programma verandert het
+scherm meteen nadat U uw keuze heeft gemaakt.
+
+
+Paragraaf 5.0: Het uitgebreide Helpmenu
+
+Het Helpmenu is een keuzemenu waar U informatie kunt
+krijgen over alle keuze's. Het is heel simpel te be-
+dienen. Met de pijltjestoetsen kunt U kiezen, met <Enter>
+krijgt U informatie over de desbetreffende keuze en
+met <Esc> gaat U weer terug naar het menu.
+
+Als het bestand KALENDER.HLP kunt U niet het Helpmenu
+gebruiken. Hierin staat nl. de teksten die U krijgt.
+
+
+Paragraaf 6.0: Het configuratie programma
+
+KCONFIG.EXE is gemaakt met de bedoeling om de outputfile
+een andere naam te geven ‚n indien U een kleurenmonitor heeft
+om de kleuren te veranderen.
+
+Indien U g‚‚n kleurenmonitor heeft krijgt U de melding dat
+U geen kleuren kunt veranderen en kunt U dus alleen de
+outputfile een andere naam geven met de letters en enkele
+andere toetsen. 
+
+Indien U w‚l een kleurenmonitor heeft kunt U met de letters en
+enkele andere toetsen de outputfile veranderen en met de
+pijltjestoetsen de kleuren veranderen. Met de pijltjes naar
+links en rechts verandert U de kleur en met de pijltjes naar
+boven en beneden kunt U kiezen.
+
+<Enter> is de gewijzigde gegevens bewaren en <Esc> is annuleren.
+
+KCONFIG.EXE is alleen via DOS op te roepen.
+
+Paragraaf 7.0: Dankbetuiging
+
+Mijn eerste dank gaat naar mijn vader, ***** Oosterhoff, voor
+zijn tips en aanwijzingen, voor het gebruiken van zijn
+PC voor de kleuren en voor het testen van het programma.
+
+Verder wil ik ***************** bedanken, voor zijn
+hulpmiddelen en tips voor de menukeuze's.
+
